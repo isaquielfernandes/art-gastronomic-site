@@ -1,0 +1,98 @@
+:root{
+  --primarycolor: ;
+  --animate-duration: 800ms;
+  --animation-delay: 0.9s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #c1c1c1;
+}
+
+/* Intro Section */
+.intro-section{
+  top: 59px;
+  padding: 4px;
+  margin: 4px auto;
+  width: 90%;
+}
+
+.info-social{
+  margin-top: 2px;
+  background-color: #666;
+  border-radius: 5rem;
+  padding: 24px;
+  opacity: .87;
+}
+
+.info-social >p{
+  font-size: 16px;
+}
+
+.social-media{
+  width: 100%;
+  background: url("../img/img-fundo-02.jpg") no-repeat center center/cover;
+  height: 550px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+/* Categoria */
+#categorias{
+  padding: 0px;
+}
+
+.receita-section > .card{
+  min-height: 120vh;
+}
+/* outher section */
+.outher-img{
+  max-height: 586px;
+}
+
+/* Footer */
+ .footer-section {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+    margin-bottom: 0;
+  }
+  .footer-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 375px){
+
+  }
+
+  @media (max-width: 764px){
+    .receita-card{
+      width: 18rem;
+    }
+    .info-social{
+      width: 95%;
+      margin: 0px auto;
+    }
+    .social-media-links{
+      text-align: center;
+    }
+    .receita-section {
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 770px){
+    .receita-card{
+      width: 15rem;
+    }
+  }
+  
