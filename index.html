@@ -10,9 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-bzjLLgZOhgXbSvSc5A9LWWo/mSIYf7U7nFbmYIB2Lgmuiw3vKGJuu+abKoaTx4W6" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Animete CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
@@ -55,9 +53,9 @@
     <div class="social-media">
       <div class="container">
         <div class="row info-social">
-          <div class="col-sm-12 col-md-3 col-lg-4  text-center">
-            <h3 class="display-6 text-center">Chef Sassy Fernandes</h3>
-            <p class="text-center">Receitas Novas Todas As Semanas.</p>
+          <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+            <h3 class="display-6 text-center" style="color: #FD281A; opacity: 1;">Chef Sassy Fernandes</h3>
+            <p class="text-center text-dark">Receitas Novas Todas As Semanas.</p>
             <p class="lead">
               <div class="btn-group" role="group">
                 <a class="btn btn-primary" href="#" role="button"><i class="fa fa-youtube-play" aria-hidden="true"></i></i></a>
@@ -81,8 +79,8 @@
     <div class="container">
       <hr>
       <div class="row">
-        <div class=" col-sm-12 col-md-12 col-lg-3">
-          <section class="categoria-section animate__animated animate__fadeInLeft">
+        <div class="col-sm-12 col-md-12 col-lg-3 mb-2">
+          <section class="categoria-section">
             <div id="categorias" class="card">
               <div class="card-header">
                 <header>
@@ -93,9 +91,9 @@
                   </h5>
                 </header>
               </div>
-              <div class="collapse active" id="collapseCategoria">
-                <div class="card-body">
-                  <nav class="list-group">
+              <div class="" id="collapseCategoria">
+                <div class="card-body p-1">
+                  <nav class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action p-1" href="">Peixe</a>
                     <a class="list-group-item list-group-item-action p-1" href="">Carne</a>
                     <a class="list-group-item list-group-item-action p-1" href="">Entradas & Petiscos</a>
@@ -118,7 +116,7 @@
             </div>
           </section>
         </div>
-        <div class=" col-sm-12 col-md-12 col-lg-9">
+        <div class="col-sm-12 col-md-12 col-lg-9">
           <section class="receita-section animate__animated animate__fadeInLeft">
             <div class="card text-center">
               <div class="card-header">
@@ -126,69 +124,71 @@
                   <h5>Receitas</h5>
                 </header>
               </div>
-              <div class="justify-content-center card-body">
+              <div class="card-body p-2">
                 <div class="row ">
-                  <div class=" col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mb-2">
-                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="receita-img">
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card mb-3">
+                      <img src="img/img-01.jpg" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
                         <h5 class="card-title">Receita title</h5>
-                        <p class="card-text"></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#staticBackdrop" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
+                        <!-- Modal -->
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card mb-3">
+                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
+                      <div class="card-body">
+                        <h5 class="card-title">Receita title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
                         <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
                       </div>
                     </div>
                   </div>
 
-                  <div class=" col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mb-2">
-                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="receita-img">
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card mb-3">
+                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
                         <h5 class="card-title">Receita title</h5>
-                        <p class="card-text"></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
                         <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
                       </div>
                     </div>
                   </div>
 
-                  <div class=" col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mb-2">
-                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="receita-img">
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card mb-3">
+                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
                         <h5 class="card-title">Receita title</h5>
-                        <p class="card-text"></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
                         <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
                       </div>
                     </div>
                   </div>
 
-                  <div class=" col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mb-2">
-                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="receita-img">
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card mb-3">
+                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
                         <h5 class="card-title">Receita title</h5>
-                        <p class="card-text"></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
                         <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
                       </div>
                     </div>
                   </div>
 
-                  <div class=" col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mb-2">
-                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="receita-img">
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card mb-3">
+                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
                         <h5 class="card-title">Receita title</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class=" col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mb-2">
-                      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="receita-img">
-                      <div class="card-body">
-                        <h5 class="card-title">Receita title</h5>
-                        <p class="card-text"></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
                         <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
                       </div>
                     </div>
@@ -214,14 +214,10 @@
     </div>
 
     <!-- outher section -->
-    <hr>
+    <hr class="hr">
     <div class="container">
       <div class="card mb-3">
-        <h3 class="card-header">Card header</h3>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-        </div>
+        <h3 class="card-header">Album</h3>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -273,21 +269,31 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <h4 class="card-title text-center ">Chef Sassy Fernandes</h4>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text text-center p-2">"COZINHAR É COMO A VIDA.
+            CASE COM UMA PESSOA QUE SAIBA COZINHAR...
+            O AMOR ACABA...A FOME NÃO."</p>
         </div>
+      </div>
+    </div>
+
+    <!-- section contacto -->
+    <hr class="hr">
+    <div class="container">
+      <div class="" style="height: 100px;">
+
       </div>
     </div>
     
     <!-- footer -->
     <footer class="footer-section  mt-4">
-        <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-instagram"></i></a>
-        <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-facebook"></i></a>
-        <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-youtube"></i></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-instagram"></i></a>
+      <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-facebook"></i></a>
+      <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-youtube"></i></a>
+      <p class="copyright mt-2">
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="ion-heart" aria-hidden="true"></i> by Art Gastronomic!
+		  </p>
     </footer>
     
     <!-- scroll reveal-->
