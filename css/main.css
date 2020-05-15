@@ -12,7 +12,10 @@
 
 body{
   background-color: #fafafa;
-  
+}
+
+.show{
+  display: block;
 }
 
 /* Intro Section */
@@ -90,6 +93,20 @@ body{
     }
     .social-media-links{
       text-align: center;
+    }
+
+    .nav-main ul.nav-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #2f3640;
+      width: 50%;
+      height: 100%;
+      opacity: .9;
+      padding: 30px;
+      transform: translateX(-500px);
+      transition: transform .5s ease-in-out;
     }
   }
   @media (min-width: 770px){

@@ -11,6 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    
     <!-- Animete CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
@@ -21,7 +22,7 @@
 <body>
     <!-- header section-->
       <header id="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
           <a class="navbar-brand" href="#">
             <img src="img/logo.jpeg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             Art Gastronomic
@@ -42,7 +43,7 @@
                 <a class="nav-link" href="receitas.html">Receitas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contato.html">Contactos</a>
+                <a class="nav-link" href="#contact">Contactos</a>
               </li>
             </ul>
           </div>
@@ -76,7 +77,7 @@
     </div>
 
     <!-- main section-->
-    <div class="container">
+    <div class="container main">
       <hr>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-3 mb-2">
@@ -86,30 +87,30 @@
                 <header>
                   <h5>Categorias
                     <a class="btn btn-outline-primary btn-sm float-right" data-toggle="collapse" href="#collapseCategoria" role="button" aria-expanded="false" aria-controls="collapseCategoria">
-                      <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                      <i class="fa fa-window-maximize" aria-hidden="false"></i>
                     </a>
                   </h5>
                 </header>
               </div>
-              <div class="" id="collapseCategoria">
+              <div class="categoria" id="collapseCategoria">
                 <div class="card-body p-1">
-                  <nav class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action p-1" href="">Peixe</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Carne</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Entradas & Petiscos</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Polvo, Lulas & Chocos</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Sobremesas & Doces</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Vegetarianos</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Vegan</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Peixe</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Sopas</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Arroz</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Massa & Pizzas</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Pães</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Mariscos</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Internacional</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Molhos</a>
-                    <a class="list-group-item list-group-item-action p-1" href="">Acompanhamentos</a>
+                  <nav class="list-group list-group-flush ">
+                    <button class="list-group-item list-group-item-action p-1 active" onclick="dataFilter('*')">Todos</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('peixe')">Peixe</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('carne')">Carne</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('entradas-petiscos')">Entradas & Petiscos</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('polvo-lulas-chocos')">Polvo, Lulas & Chocos</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('sobremesas-doces')">Sobremesas & Doces</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('vegetarianos')">Vegetarianos</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('vegan')">Vegan</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('sopas')">Sopas</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('arroz')">Arroz</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('mass-pizzas')">Massa & Pizzas</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('paes')">Pães</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('mariscos')">Mariscos</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('internacional')">Internacional</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('molhos')">Molhos</button>
+                    <button class="list-group-item list-group-item-action p-1" onclick="dataFilter('acompanhamentos')">Acompanhamentos</button>
                   </nav>
                 </div>
               </div>
@@ -117,7 +118,7 @@
           </section>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-9">
-          <section class="receita-section animate__animated animate__fadeInLeft">
+          <section class="receita-section">
             <div class="card text-center">
               <div class="card-header">
                 <header>
@@ -125,8 +126,9 @@
                 </header>
               </div>
               <div class="card-body p-2">
-                <div class="row ">
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="receita-list" class="row">
+
+                  <div class="col-sm-12 col-md-4 col-lg-4 vegan">
                     <div class="card mb-3">
                       <img src="img/img-01.jpg" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
@@ -139,7 +141,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 massa-pizzas">
                     <div class="card mb-3">
                       <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
@@ -150,7 +152,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 vegan massa-pizzas">
                     <div class="card mb-3">
                       <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
@@ -161,7 +163,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 massa-pizzas">
                     <div class="card mb-3">
                       <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
@@ -172,7 +174,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 massa-pizzas">
                     <div class="card mb-3">
                       <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
@@ -183,7 +185,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 massa-pizzas">
                     <div class="card mb-3">
                       <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid" alt="receita-img" >
                       <div class="card-body">
@@ -278,12 +280,17 @@
       </div>
     </div>
 
-    <!-- section contacto -->
+    <!-- section contato -->
     <hr class="hr">
     <div class="container">
-      <div class="" style="height: 100px;">
-
-      </div>
+      <aside id="contact" class="address">
+        <h2 class="">Find Us</h2>			
+        <div class="row">
+          <p class="col-sm-12 col-md-4 col-lg-3"><strong>Address</strong><br>123 Main Street<br>New York, NY 10001</p>
+          <p class="col-sm-12 col-md-2 col-lg-3"><strong>Contact</strong><br>935728467<br>945790354</p>
+          <p class="col-sm-12 col-md-6 col-lg-6"><strong>Hours</strong><br>Monday–Friday: 9:00AM–5:00PM<br>Saturday &amp; Sunday: 11:00AM–3:00PM</p>
+        </div>
+      </aside>
     </div>
     
     <!-- footer -->
