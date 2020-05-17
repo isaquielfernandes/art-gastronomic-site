@@ -2,9 +2,13 @@
 (function ($) {
 
     "use strict";
-	
-	// ACCORDIAN
-	panelAccordian();
+
+        function isExists(elem){
+	    if ($(elem).length > 0) { 
+		return true;
+	    }
+	    return false;
+        }
 
 	$(window).on('load', function(){
 		
@@ -45,27 +49,4 @@
 	});
 	
 	
-	if ( $.isFunction($.fn.fluidbox) ) {
-		$('a').fluidbox();
-	}
-	
-	
 })(jQuery);
-
-function panelAccordian(){
-	
-	var panelTitle = $('.panel-title');
-	panelTitle.on('click', function(){
-		$('.panel-title').removeClass('active');
-		$(this).toggleClass('active');
-		
-	});
-	
-}
-
-function isExists(elem){
-	if ($(elem).length > 0) { 
-		return true;
-	}
-	return false;
-}
