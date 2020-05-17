@@ -85,18 +85,18 @@
       <hr>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-3 mb-2">
-          <section class="categoria-section">
+          <section id="categoria-section" class="categoria-section">
             <div id="categorias" class="card">
-              <div class="card-header">
+              <div id="categoria-header" class="card-header">
                 <header>
                   <h5>Categorias
-                    <a class="btn btn-outline-primary btn-sm float-right" data-toggle="collapse" href="#collapseCategoria" role="button" aria-expanded="false" aria-controls="collapseCategoria">
+                    <button class="btn btn-outline-primary btn-sm float-right" data-toggle="collapse" data-target="#collapseCategoria" aria-expanded="true" aria-controls="collapseCategoria">
                       <i class="fa fa-window-maximize" aria-hidden="false"></i>
-                    </a>
+                    </button>
                   </h5>
                 </header>
               </div>
-              <div class="categoria" id="collapseCategoria">
+              <div class="collapse show categoria" id="collapseCategoria" aria-labelledby="categoria-header" data-parent="#categoria-section">
                 <div class="card-body p-1">
                   <nav class="receitaFilter clearfix list-group list-group-flush">
                     <a href="#" data-filter="*" class="list-group-item list-group-item-action p-1 active">Todos</a>
