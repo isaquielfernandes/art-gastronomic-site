@@ -51,6 +51,8 @@ body{
   padding: 0px;
 }
 
+.receitaFilter a.current{  color: #FFA804; }
+
 .receita-section > .card{
   min-height: auto;
 }
