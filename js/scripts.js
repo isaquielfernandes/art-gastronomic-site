@@ -8,9 +8,9 @@
 
 	$(window).on('load', function(){
 		
-		// ISOTOPE PORTFOLIO WITH FILTER
-		if(isExists('.portfolioContainer')){
-			var $container = $('.portfolioContainer');
+		// ISOTOPE RECEITA WITH FILTER
+		if(isExists('.receitaContainer')){
+			var $container = $('.receitaContainer');
 			$container.isotope({
 				filter: '*',
 				animationOptions: {
@@ -20,8 +20,8 @@
 				}
 			});
 		 
-			$('.portfolioFilter a').click(function(){
-				$('.portfolioFilter .current').removeClass('current');
+			$('.receitaFilter a').click(function(){
+				$('.receitaFilter .current').removeClass('current');
 				$(this).addClass('current');
 		 
 				var selector = $(this).attr('data-filter');
