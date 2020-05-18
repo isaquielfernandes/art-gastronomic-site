@@ -1,4 +1,4 @@
-$('.receitaFilter a').on('click', function (e) {
+$('.receitaFilter a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });
