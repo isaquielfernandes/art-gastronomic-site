@@ -29,8 +29,8 @@ $('.receitaFilter a').on('click', function (e) {
 				}
 			});
 		 
-			$('.receitaFilter a').click(function(e){
-                                e.preventDefault();
+			$('.receitaFilter a').click(function(){
+                                
 				$('.receitaFilter .active').removeClass('active');
 				$(this).addClass('active');
 		 
