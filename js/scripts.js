@@ -1,7 +1,3 @@
-$('.receitaFilter a').click(function (e) {
-  e.preventDefault();
-  $(this).tab('show');
-});
 
 
 (function ($) {
@@ -29,8 +25,7 @@ $('.receitaFilter a').click(function (e) {
 				}
 			});
 		 
-			$('.receitaFilter a').click(function(){
-                                
+			$('.receitaFilter a').click(function(){  
 				$('.receitaFilter .active').removeClass('active');
 				$(this).addClass('active');
 		 
