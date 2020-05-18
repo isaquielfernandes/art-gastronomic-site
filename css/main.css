@@ -13,7 +13,6 @@
 body{
   background-color: #fafafa;
   height: 100%;
-  margin-top: 36px;
 }
 
 .mg-t-10{ 
@@ -21,7 +20,7 @@ body{
 }
 
 .section{ 
-    padding: 100px 0 50px; 
+    padding-top: 45px;
 }
 
 /* Intro Section */
