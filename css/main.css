@@ -15,11 +15,17 @@ body{
   height: 100%;
   top: 56px;
 }
-.mg-t-10{ margin-top: 10px; }
+
+.mg-t-10{ 
+   margin-top: 10px; 
+}
+
+.section{ 
+    padding: 100px 0 50px; 
+}
 
 /* Intro Section */
 .intro-section{
-  top: 59px;
   padding: 4px;
   margin: 4px auto;
   width: 90%;
