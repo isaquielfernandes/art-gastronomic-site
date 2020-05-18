@@ -13,7 +13,7 @@
 body{
   background-color: #fafafa;
   height: 100%;
-  margin-top: 56px;
+  margin-top: 36px;
 }
 
 .mg-t-10{ 
@@ -52,13 +52,6 @@ body{
   justify-content: flex-end;
   color: #fff;
 }
-
-/* Categoria */
-#categorias{
-  padding: 0px;
-}
-
-.receitaFilter a.current{  color: #FFA804; }
 
 .receita-section > .card{
   min-height: auto;
