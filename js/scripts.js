@@ -1,4 +1,5 @@
 
+
 (function ($) {
 
     "use strict";
@@ -24,7 +25,7 @@
 				}
 			});
 		 
-			$('.receitaFilter a').click(function(){
+			$('.receitaFilter a').click(function(e){
                                 e.preventDefault();
 				$('.receitaFilter .active').removeClass('active');
 				$(this).addClass('active');
