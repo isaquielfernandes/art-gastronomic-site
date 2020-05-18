@@ -13,7 +13,7 @@
 body{
   background-color: #fafafa;
   height: 100%;
-  top: 56px;
+  margin-top: 56px;
 }
 
 .mg-t-10{ 
@@ -32,7 +32,6 @@ body{
 }
 
 .info-social{
-  margin-top: 2px;
   background-color: rgb(250, 235, 235);
   border-radius: 3.5rem;
   padding: 24px;
