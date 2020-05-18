@@ -13,13 +13,13 @@ body {
     top: 56px; /* Height of navbar */
     bottom: 0;
     left: 100%;
-    width: 70%;
+    width: 60%;
     opacity: .73;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: #55710B;
+    background-color: #000;
     transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
