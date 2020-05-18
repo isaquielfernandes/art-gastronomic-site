@@ -1,2 +1,2 @@
 
-ScrollReveal().reveal('', { delay: 500 });
+ScrollReveal().reveal('.container', { delay: 500 });
