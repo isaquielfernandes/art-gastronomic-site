@@ -43,8 +43,9 @@ body{
 
 .social-media{
   width: 100%;
+  z-index: -1;
   background: url("../img/img-fundo-02.jpg") no-repeat center center/cover;
-  height: 550px;
+  max-height: 550px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
