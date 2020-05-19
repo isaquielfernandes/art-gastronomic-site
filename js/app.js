@@ -1,6 +1,8 @@
 
 ScrollReveal().reveal('.container', { delay: 500 });
 
+// Apply Fluidbox to elements of interest
+$('.gallery a').fluidbox();
 
 .fluidbox-overlay {
 	    .overlay-1 & {
