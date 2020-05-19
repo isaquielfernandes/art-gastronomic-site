@@ -48,6 +48,7 @@ body{
   background: url("../img/img-fundo-02.jpg") no-repeat center center/cover;
   max-height: 550px;
   padding-bottom: 20px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
