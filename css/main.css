@@ -43,6 +43,7 @@ body{
 
 .social-media{
   width: 100%;
+  top: 56px;
   z-index: -1;
   background: url("../img/img-fundo-02.jpg") no-repeat center center/cover;
   max-height: 550px;
