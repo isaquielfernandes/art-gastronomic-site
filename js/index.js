@@ -39,3 +39,14 @@ class UI{
      receitaDOM.innerHTML = result;
    }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ui = new UI();
+  const receitas = new Receitas();
+
+  // mostrar todas as receitas
+  receitas.getReceitas()
+    .then(receitas => {
+      ui.displayReceitas(receitas);
+    });
+});
