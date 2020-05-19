@@ -1,4 +1,4 @@
-import data from './receita';
+import data from "./receita";
 
 const receitaDOM = document.querySelector(".receitaContainer");
 
