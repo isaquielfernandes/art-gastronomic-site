@@ -14,7 +14,7 @@
       "fields": {
         "nome": "receita 02",
         "categoria": "peixes",
-        " descrição": "",
+        "descrição": "",
         "image": { "fields": { "file": { "url": "./img/receita-2.jpg" } } }
       }
     },
