@@ -1,4 +1,13 @@
-{
+import img1 from "./img/product-1.jpg";
+import img2 from "./img/product-2.jpg";
+import img3 from "./img/product-3.jpg";
+import img4 from "./img/product-4.jpg";
+import img5 from "./img/product-5.jpg";
+import img6 from "./img/product-6.jpg";
+import img7 from "./img/product-7.jpg";
+import img8 from "./img/product-8.jpg";
+
+export default {
   "items": [
     {
       "sys": { "id": "1" },
@@ -6,7 +15,7 @@
         "nome": "receita 01",
         "categoria": "vegan",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-1.jpg" } } }
+        "image": { "fields": { "file": { "url": img1 } } }
       }
     },
     {
@@ -15,7 +24,7 @@
         "nome": "receita 02",
         "categoria": "peixes",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-2.jpg" } } }
+        "image": { "fields": { "file": { "url": img2 } } }
       }
     },
     {
@@ -24,7 +33,7 @@
         "nome": "receita 03",
         "categoria": "arroz",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-3.jpg" } } }
+        "image": { "fields": { "file": { "url": img3 } } }
       }
     },
     {
@@ -33,7 +42,7 @@
         "nome": "receita 04",
         "categoria": "paes",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-4.jpg" } } }
+        "image": { "fields": { "file": { "url": img4 } } }
       }
     },
     {
@@ -42,7 +51,7 @@
         "nome": "receita 05",
         "categoria": "paes",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-5.jpg" } } }
+        "image": { "fields": { "file": { "url": img5 } } }
       }
     },
     {
@@ -51,7 +60,7 @@
         "nome": "receita 06",
         "categoria": "vegan",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-6.jpg" } } }
+        "image": { "fields": { "file": { "url": img6 } } }
       }
     },
     {
@@ -60,7 +69,7 @@
         "nome": "receita 07",
         "categoria": "paes",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/receita-7.jpg" } } }
+        "image": { "fields": { "file": { "url": img7 } } }
       }
     },
     {
@@ -69,7 +78,7 @@
         "nome": "receita 08",
         "categoria": "paes",
         "descricao": "",
-        "image": { "fields": { "file": { "url": "../../img/product-8.jpeg" } } }
+        "image": { "fields": { "file": { "url": img1 } } }
       }
     }
   ]
