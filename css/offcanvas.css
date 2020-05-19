@@ -58,6 +58,8 @@ body {
   padding-bottom: .75rem;
   font-size: .875rem;
   color: #6c757d;
+  opacity: 1;
+  border: 1px solid #6c757d;
 }
 
 .nav-underline .nav-link:hover {
