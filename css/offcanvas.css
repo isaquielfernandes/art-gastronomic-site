@@ -16,8 +16,7 @@ body {
     width: 60%;
     height: 100%;
     opacity: .9;
-    padding-right: .45rem;
-    padding-left: .45rem;
+    padding: 1rem .45rem 0 .45rem;
     overflow-y: auto;
     visibility: hidden;
     background-color: #2f3640;
@@ -29,6 +28,9 @@ body {
     visibility: visible;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
+  }
+  .nav-item{
+    padding: .44rem;
   }
   .nav-link {
     margin: 1px 0px;
