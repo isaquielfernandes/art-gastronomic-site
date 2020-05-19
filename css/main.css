@@ -1,5 +1,11 @@
 :root{
   --primarycolor: #55710B;
+  --primary-secund: #f09d51;
+  --main-white: #fff;
+  --main-black: #222;
+  --main-grey: #ececec;
+  --main-spacing: 0.1rem;
+  --main-transition: all 0.3s linear;
   --animate-duration: 800ms;
   --animation-delay: 0.9s;
 }
@@ -11,7 +17,8 @@
 }
 
 body{
-  background-color: #fafafa;
+  color: var(--main-black);
+  background: var(--main-white);
   height: 100%;
 }
 
