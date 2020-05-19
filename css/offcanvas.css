@@ -16,8 +16,8 @@ body {
     width: 60%;
     height: 100%;
     opacity: .9;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: .45rem;
+    padding-left: .45rem;
     overflow-y: auto;
     visibility: hidden;
     background-color: #2f3640;
@@ -30,11 +30,8 @@ body {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-  .offcanvas-collapse ul li{
-    padding: 2px;
-  }
   .nav-link {
-    margin: 2px 0px;
+    margin: 1px 0px;
     padding: 1px;
     color: #6c757d;
     opacity: 1;
