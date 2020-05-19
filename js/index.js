@@ -1,1 +1,1 @@
-
+import data from './receita';
