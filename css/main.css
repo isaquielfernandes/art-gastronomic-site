@@ -33,7 +33,7 @@ body{
 
 .btn-ver-receita {
   position: absolute;
-  top: 60%;
+  top: 10%;
   right: 0;
   background: var(--primary-secund);
   border: none;
