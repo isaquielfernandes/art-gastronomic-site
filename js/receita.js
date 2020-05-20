@@ -1,11 +1,11 @@
-import img1 from "img/receita-1.jpg";
-import img2 from "img/receita-2.jpg";
-import img3 from "img/receita-3.jpg";
-import img4 from "img/receita-4.jpg";
-import img5 from "img/receita-5.jpg";
-import img6 from "img/receita-6.jpg";
-import img7 from "img/receita-7.jpg";
-import img8 from "img/receita-8.jpg";
+import img1 from "../../img/receita-1.jpg";
+import img2 from "../../img/receita-2.jpg";
+import img3 from "../../img/receita-3.jpg";
+import img4 from "../../img/receita-4.jpg";
+import img5 from "../../img/receita-5.jpg";
+import img6 from "../../img/receita-6.jpg";
+import img7 from "../../img/receita-7.jpg";
+import img8 from "../../img/receita-8.jpg";
 
 export default {
   "items": [
