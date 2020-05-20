@@ -23,8 +23,8 @@ body{
 }
 
 .img-container {
-  position: relative;
   
+  overflow: hidden;
 }
 
 .img-container:hover img {
