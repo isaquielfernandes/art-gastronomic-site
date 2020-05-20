@@ -74,7 +74,7 @@ items: [
     }
   ]
 
-const receitaDOM = document.querySelector(".receitaContainer");
+const receitaDOM = document.querySelector('.receitaContainer');
 
 class Receitas{
    getReceitas() {
