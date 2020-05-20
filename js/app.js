@@ -1,6 +1,10 @@
 
 ScrollReveal().reveal('.container', { delay: 500 });
 
+(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 // Apply Fluidbox to elements of interest
 $('.card img').fluidbox();
 
