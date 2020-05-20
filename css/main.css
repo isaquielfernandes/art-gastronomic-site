@@ -29,7 +29,7 @@ body{
 
 .bag-btn {
   position: absolute;
-  top: 70%;
+  top: 60%;
   right: 0;
   background: var(--primary-secund);
   border: none;
