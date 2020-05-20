@@ -1,4 +1,4 @@
-alert("Hello\nHow are you?");
+
 items: [
     {
       sys: { id: "1" },
@@ -86,7 +86,7 @@ class Receitas{
            const image = item.fields.image.fields.file.url;
            return {nome, categoria, descricao, id, image};
         });
-        alert(receitas);
+        
         console.log(receitas);
         return receitas;
      }catch(er){
@@ -116,6 +116,7 @@ class UI{
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  alert("Hello\nHow are you?");
   const ui = new UI();
   const receitas = new Receitas();
   
