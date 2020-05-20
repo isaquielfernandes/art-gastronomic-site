@@ -14,8 +14,8 @@ class Receitas {
         });
         console.log(receitas);
         return receitas;
-     }catch(e){
-       console.log(e);
+     }catch(er){
+       console.log(er);
    }
 }
 
@@ -30,7 +30,7 @@ class UI{
                       <div class="card-body p-1">
                         <h5 class="card-title mt-1">${receita.nome}</h5>
                         <p class="card-text text-truncate">${receita.descricao}</p>
-                        <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
+                        <a href="#" class="btn btn-primary btn-block" data-id=${receita.id}>Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
                       </div>
                  </div>
           </div>
