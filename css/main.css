@@ -22,6 +22,30 @@ body{
   height: 100%;
 }
 
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bag-btn {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background: var(--primary-secund);
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--main-spacing);
+  font-weight: bold;
+  transition: var(--main-transition);
+  transform: translateX(101%);
+  cursor: pointer;
+}
+
+.bag-btn:hover {
+  color: var(--main-white);
+}
+
 .mg-t-10{ 
    margin-top: 10px; 
 }
