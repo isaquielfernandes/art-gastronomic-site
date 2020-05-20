@@ -1,8 +1,8 @@
-import data from "./receita";
+import data from "./receitas";
 
 const receitaDOM = document.querySelector(".receitaContainer");
 
-class Receitas {
+class Receitas{
    async getReceitas() {
      try{
         let receitas = data.items;
