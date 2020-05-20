@@ -27,7 +27,11 @@ body{
   overflow: hidden;
 }
 
-.bag-btn {
+.img-container:hover img {
+  opacity: 0.5;
+}
+
+.btn-ver-receita {
   position: absolute;
   top: 60%;
   right: 0;
@@ -42,11 +46,11 @@ body{
   cursor: pointer;
 }
 
-.bag-btn:hover {
+.btn-ver-receita:hover {
   color: var(--main-white);
 }
 
-.img-container:hover .bag-btn {
+.img-container:hover .btn-ver-receita {
   transform: translateX(0);
 }
 
