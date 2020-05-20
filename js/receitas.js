@@ -8,7 +8,7 @@ import img7 from "./img/receita-7.jpg";
 import img8 from "./img/receita-8.jpg";
 
 export default {
-  "items": [
+  items: [
     {
       "sys": { "id": "1" },
       "fields": {
