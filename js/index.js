@@ -1,4 +1,5 @@
 import data from "./receitas";
+import { log } from "util";
 
 const receitaDOM = document.querySelector(".receitaContainer");
 
