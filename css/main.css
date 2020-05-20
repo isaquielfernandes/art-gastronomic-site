@@ -46,6 +46,10 @@ body{
   color: var(--main-white);
 }
 
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+
 .mg-t-10{ 
    margin-top: 10px; 
 }
