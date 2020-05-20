@@ -1,3 +1,4 @@
+alert("Hello\nHow are you?");
 items: [
     {
       sys: { id: "1" },
@@ -85,7 +86,7 @@ class Receitas{
            const image = item.fields.image.fields.file.url;
            return {nome, categoria, descricao, id, image};
         });
-        alert("Hello! I am an alert box!!", receitas);
+        alert(receitas);
         console.log(receitas);
         return receitas;
      }catch(er){
