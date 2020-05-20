@@ -85,6 +85,7 @@ class Receitas{
            const image = item.fields.image.fields.file.url;
            return {nome, categoria, descricao, id, image};
         });
+        alert("Hello! I am an alert box!!", receitas);
         console.log(receitas);
         return receitas;
      }catch(er){
