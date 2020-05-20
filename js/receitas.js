@@ -5,8 +5,8 @@ export default {
       sys: { id: "1" },
       fields: {
         nome: "receita 01",
-        categoria": "vegan",
-        descricao": "",
+        categoria: "vegan",
+        descricao: "",
         image: { fields: { file: { url: "img/receita-1.jpg" } } }
       }
     },
