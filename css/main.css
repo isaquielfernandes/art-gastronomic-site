@@ -23,7 +23,8 @@ body{
 }
 
 .img-container {
- 
+  position: relative;
+  
 }
 
 .img-container:hover img {
