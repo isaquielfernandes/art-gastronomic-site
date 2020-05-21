@@ -1,7 +1,7 @@
 //import { client } from "./contentful";
 //import "core-js/stable";
 
-[
+items = [
   {
     sys: { id: "1" },
     fields: {
@@ -87,7 +87,7 @@ class Receitas{
         //    content_type: " "
         //});
         
-        let receitas = dados.items;
+        let receitas = dados;
         receitas = receitas.map( item => {
            const { nome, categoria, descricao } = item.fields;
            const { id } = item.sys;
