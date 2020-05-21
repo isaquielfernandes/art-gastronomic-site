@@ -87,7 +87,7 @@ class Receitas{
         //    content_type: " "
         //});
         
-        let receitas = dados;
+        let receitas = items;
         receitas = receitas.map( item => {
            const { nome, categoria, descricao } = item.fields;
            const { id } = item.sys;
