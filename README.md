@@ -1,2 +1,2 @@
 # art-gastronomic-site
-![](./art-gastronomic-site.png)
+![](./art-gastronomic-site.jpg)
