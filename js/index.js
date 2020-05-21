@@ -81,8 +81,8 @@ const receitaDOM = document.querySelector('.receitaContainer');
 class Receitas{
    async getReceitas() {
      try{
-        let resultado = await fetch('receitas.json');
-        let dados = resultado.json();
+       // let resultado = await fetch('receitas.json');
+      //  let dados = resultado.json();
         //let dados = await client.getEntries({
         //    content_type: " "
         //});
