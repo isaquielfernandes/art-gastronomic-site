@@ -27,6 +27,10 @@ body{
   overflow: hidden;
 }
 
+.img-logo {
+  border-radius: 50%;
+}
+
 .img-container:hover img {
   opacity: 0.5;
 }
@@ -54,11 +58,11 @@ body{
   transform: translateX(0);
 }
 
-.mg-t-10{ 
+.mg-t-10 { 
    margin-top: 10px; 
 }
 
-.section{ 
+.section { 
     padding-top: 60px;
 }
 
@@ -77,14 +81,14 @@ body{
   z-index: 0;
 }
 
-.info-social .btn-group . btn-secondary{
+.info-social .btn-group .btn-secondary {
    opacity: 1;
 }
-.info-social >p{
+.info-social >p {
   font-size: 16px;
 }
 
-.social-media{
+.social-media {
   width: 100%;
   top: 56px;
   z-index: -1;
@@ -98,15 +102,16 @@ body{
   color: #fff;
 }
 
-.receita-section > .card{
+.receita-section > .card {
   min-height: auto;
 }
 
-.main-section{
+.main-section {
   margin-top: 5.34rem;
 }
+
 /* outher section */
-.outher-img{
+.outher-img {
   max-height: 586px;
 }
 
@@ -120,27 +125,28 @@ body{
     margin-bottom: 0;
     bottom: 0;
   }
+
   .footer-section p:last-child {
     margin-bottom: 0;
   }
 
-  @media (max-width: 375px){
-
-  }
-
   @media (max-width: 768px){
-    .receita-card{
+    .receita-card {
       width: 18rem;
     }
-    .info-social{
+    .info-social {
       width: 95%;
       margin: 0px auto;
     }
-    .social-media-links{
+    .social-media-links {
       text-align: center;
     }
   }
-  @media (min-width: 770px){
+  @media (min-width: 770px) {
+
+    .social-media { 
+      height: 450px;
+    }
     .receita-card{
       width: 15rem;
     }

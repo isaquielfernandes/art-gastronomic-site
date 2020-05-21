@@ -1,6 +1,6 @@
 
 export default {
-  items: [
+  items = [
     {
       sys: { id: "1" },
       fields: {
@@ -30,7 +30,7 @@ export default {
     },
     {
       sys: { id: "4" },
-      fields": {
+      fields: {
         nome: "receita 04",
         categoria: "paes",
         descricao: "",
@@ -74,4 +74,4 @@ export default {
       }
     }
   ]
-};
+}
