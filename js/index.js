@@ -1,4 +1,7 @@
-items = [
+//import { client } from "./contentful";
+//import "core-js/stable";
+
+items: [
   {
     sys: { id: "1" },
     fields: {
@@ -78,6 +81,12 @@ const receitaDOM = document.querySelector('.receitaContainer');
 class Receitas{
    async getReceitas() {
      try{
+        //let resultado = await fetch('receitas.json');
+        //let dados = resultado.json();
+        //let dados = await client.getEntries({
+        //    content_type: " "
+        //});
+        
         let receitas = items;
         receitas = receitas.map( item => {
            const { nome, categoria, descricao } = item.fields;
