@@ -1,30 +1,77 @@
-// Receita 
-class Receita {
-    constructor(nome, categoria, imageUrl, descricao){
-        this.nome = nome;
-        this.categoria = categoria;
-        this.imageUrl = imageUrl;
-        this.descricao = descricao;
-    }
-}
 
-// UI
-class UI{
-    adicionarReceita(receita){
-        const receitaList = document.getElementById('receita-list');
-        const element = document.createElement('div');
-        element.innerHTML = `
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card mb-3 ${receita.categoria}">
-                    <img src="${receita.imageUrl}" class="card-img-top img-fluid" alt="receita-img" >
-                    <div class="card-body">
-                        <h6 class="card-title">${receita.nome}</h6>
-                        <p class="card-text">${receita.descricao}</p>
-                        <a href="#" class="btn btn-primary btn-block">Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        `;
-        receitaList.appendChild(element);
+export default {
+  items = [
+    {
+      sys: { id: "1" },
+      fields: {
+        nome: "receita 01",
+        categoria: "vegan",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-1.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "2" },
+      fields: {
+        nome: "receita 02",
+        categoria: "peixes",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-2.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "3" },
+      fields: {
+        nome: "receita 03",
+        categoria: "arroz",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-3.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "4" },
+      fields: {
+        nome: "receita 04",
+        categoria: "paes",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-4.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "5" },
+      fields: {
+        nome: "receita 05",
+        categoria: "paes",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-5.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "6" },
+      fields: {
+        nome: "receita 06",
+        categoria: "vegan",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-6.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "7" },
+      fields: {
+        nome: "receita 07",
+        categoria: "paes",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-7.jpg" } } }
+      }
+    },
+    {
+      sys: { id: "8" },
+      fields: {
+        nome: "receita 08",
+        categoria: "paes",
+        descricao: "",
+        image: { fields: { file: { url: "img/receita-8.jpg" } } }
+      }
     }
+  ]
 }

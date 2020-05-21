@@ -4753,7 +4753,6 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    
   }
   .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute;
