@@ -1,7 +1,7 @@
 //import { client } from "./contentful";
 //import "core-js/stable";
 
-items: [
+items = [
   {
     sys: { id: "1" },
     fields: {
