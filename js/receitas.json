@@ -1,5 +1,4 @@
-
-export default {
+{
   "items": [
     {
       "sys": { "id": "1" },
