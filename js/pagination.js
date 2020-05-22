@@ -1,9 +1,4 @@
-function paginate(
-    totalItems: number,
-    currentPage: number = 1,
-    pageSize: number = 10,
-    maxPages: number = 10
-) {
+  function paginate( totalItems, currentPage = 1, pageSize = 10, maxPages = 10) {
     // calculate total pages
     let totalPages = Math.ceil(totalItems / pageSize);
 
@@ -14,7 +9,7 @@ function paginate(
         currentPage = totalPages;
     }
 
-    let startPage: number, endPage: number;
+    let startPage, endPage;
     if (totalPages <= maxPages) {
         // total pages less than max so show all pages
         startPage = 1;
@@ -59,4 +54,4 @@ function paginate(
     };
 }
 
-export = paginate;
+export { pagination }
