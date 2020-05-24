@@ -1,6 +1,6 @@
 //import { client } from "./contentful";
 //import "core-js/stable";
-import dados  from './receitas.js';
+//import dados  from './receitas.js';
 
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
@@ -43,7 +43,7 @@ class UI{
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ${receita.categoria}" data-fluidbox>
               <article>
                   <div class="card mb-3 img-container">
-                      <img src="${receita.image}" class="card-img-top img-fluid" alt="receita-img" >
+                      <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >
                       <button type="button" class="btn-ver-receita"data-id="${receita.id}" data-toggle="modal" data-target="">
                           Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i>
                       </button>
@@ -52,7 +52,7 @@ class UI{
                       </div>
                   </div>
               </article>
-          </div> <!-- article receita end-->
+          </div>
        `;
      });
      receitaDOM.innerHTML = result;
