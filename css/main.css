@@ -1,4 +1,4 @@
-:root{
+:root {
   --primarycolor: #55710B;
   --primary-secund: #f09d51;
   --main-white: #fff;
@@ -10,13 +10,13 @@
   --animation-delay: 0.9s;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   color: var(--main-black);
   background: var(--main-white);
   height: 100%;
@@ -58,22 +58,22 @@ body{
   transform: translateX(0);
 }
 
-.mg-t-10 { 
-   margin-top: 10px; 
+.mg-t-10 {
+  margin-top: 10px;
 }
 
-.section { 
-    padding-top: 60px;
+.section {
+  padding-top: 60px;
 }
 
 /* Intro Section */
-.intro-section{
+.intro-section {
   padding: 4px;
   margin: 4px auto;
   width: 90%;
 }
 
-.info-social{
+.info-social {
   background-color: rgb(250, 235, 235);
   border-radius: 2.5rem;
   padding: 12px;
@@ -82,9 +82,10 @@ body{
 }
 
 .info-social .btn-group .btn-secondary {
-   opacity: 1;
+  opacity: 1;
 }
-.info-social >p {
+
+.info-social>p {
   font-size: 16px;
 }
 
@@ -102,7 +103,7 @@ body{
   color: #fff;
 }
 
-.receita-section > .card {
+.receita-section>.card {
   min-height: auto;
 }
 
@@ -116,39 +117,42 @@ body{
 }
 
 /* Footer */
- .footer-section {
-    padding: 2.5rem 0;
-    color: #fff;
+.footer-section {
+  padding: 2.5rem 0;
+  color: #fff;
+  text-align: center;
+  background-color: #073642;
+  border-top: .05rem solid #e5e5e5;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.footer-section p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .receita-card {
+    width: 18rem;
+  }
+
+  .info-social {
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  .social-media-links {
     text-align: center;
-    background-color: #073642;
-    border-top: .05rem solid #e5e5e5;
-    margin-bottom: 0;
-    bottom: 0;
+  }
+}
+
+@media (min-width: 770px) {
+
+  .social-media {
+    height: 450px;
   }
 
-  .footer-section p:last-child {
-    margin-bottom: 0;
+  .receita-card {
+    width: 15rem;
   }
-
-  @media (max-width: 768px){
-    .receita-card {
-      width: 18rem;
-    }
-    .info-social {
-      width: 95%;
-      margin: 0px auto;
-    }
-    .social-media-links {
-      text-align: center;
-    }
-  }
-  @media (min-width: 770px) {
-
-    .social-media { 
-      height: 450px;
-    }
-    .receita-card{
-      width: 15rem;
-    }
-  }
-  
+}
