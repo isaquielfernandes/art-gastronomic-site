@@ -134,6 +134,23 @@
           }
         }
       }
+    },
+    {
+      "sys": {
+        "id": "9"
+      },
+      "fields": {
+        "nome": "Receita 09",
+        "categoria": "sobremesas-doces",
+        "descricao": "",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "img/receita/receita-9.jpg"
+            }
+          }
+        }
+      }
     }
   ]
 }
