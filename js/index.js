@@ -1,6 +1,5 @@
 //import { client } from "./contentful";
 //import "core-js/stable";
-
 //import dados  from './receitas.js';
 
 const receitaDOM = document.querySelector('.receitaContainer');
