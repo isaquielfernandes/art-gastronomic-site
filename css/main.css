@@ -19,7 +19,6 @@
 body {
   color: var(--main-black);
   background: var(--main-white);
-  height: 100%;
 }
 
 .img-container {

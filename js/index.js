@@ -1,19 +1,27 @@
 //import { client } from "./contentful";
 //import "core-js/stable";
-//import dados  from './receitas.js';
+import dados  from './receitas.js';
+
+const client = contentful.createClient({
+  // This is the space ID. A space is like a project folder in Contentful terms
+  space: "dcugw5hovzo7",
+  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+  accessToken: "yMCnTzi1YDlxhXNk48g9bBA6vYOLOrR0tcJCUKpwoXc"
+});
 
 const receitaDOM = document.querySelector('.receitaContainer');
 
 class Receitas{
    async getReceitas() {
      try{
-      let resultado = await fetch('js/receitas.json');
-      let dados = await resultado.json();
-        //let dados = await client.getEntries({
-        //    content_type: " "
-        //});
+        //let resultado = await fetch('js/receitas.json');
+        //let dados = await resultado.json();
+        let contentful = await client.getEntries({
+          content_type: "receitaPost"
+        });
         
-        let receitas = dados.receitas;
+        //let receitas = dados.receitas;
+        let receitas = contentful.items;
         receitas = receitas.map( item => {
            const { nome, categoria, descricao } = item.fields;
            const { id } = item.sys;
@@ -23,7 +31,7 @@ class Receitas{
         return receitas;
      }catch(er){
        console.log(er);
-   }
+    }
  }
 }
 
