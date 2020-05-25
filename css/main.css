@@ -31,6 +31,11 @@ html, body {
   overflow: hidden;
 }
 
+.receita-img {
+  display: block;
+  transition: var(--main-transition);
+}
+
 .img-logo {
   border-radius: 50%;
 }
