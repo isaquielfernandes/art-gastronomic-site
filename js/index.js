@@ -9,6 +9,10 @@ const client = contentful.createClient({
   accessToken: "yMCnTzi1YDlxhXNk48g9bBA6vYOLOrR0tcJCUKpwoXc"
 });
 
+client.sync({
+  initial: true
+});
+
 const receitaDOM = document.querySelector('.receitaContainer');
 
 class Receitas{
@@ -16,12 +20,14 @@ class Receitas{
      try{
         //let resultado = await fetch('js/receitas.json');
         //let dados = await resultado.json();
-        let contentful = await client.getEntries({
-          content_type: "receitaPost"
+        let dados = await client.getEntries({
+          content_type: "receitaPost",
+          skip: 3,
+          limit: 6
         });
         
         //let receitas = dados.receitas;
-        let receitas = contentful.items;
+        let receitas = dados.items;
         receitas = receitas.map( item => {
            const { nome, categoria, descricao } = item.fields;
            const { id } = item.sys;
@@ -38,32 +44,39 @@ class Receitas{
 class UI{
    displayReceitas(receitas){
      let result = "";
-     receitas.forEach(receita => {
-       result += `
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
-                <article>
-                  <div class="card img-container">
-                      <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >
-                      <button type="button" class="btn-ver-receita"data-id="${receita.id}" data-toggle="modal" data-target="">
-                          Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i>
-                      </button>
-                      <div class="card-header p-2">
-                        <h5 class="card-title mt-1">${receita.nome}</h5>
-                      </div>
-                  </div>
-                </article>
-          </div>
-       `;
-     });
+     if(receitas === 0){
+        result += `<div><p>Caregando ....</p></div>`;
+     }else {
+      receitas.forEach(receita => {
+        result += `
+           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
+                 <article>
+                   <div class="card img-container">
+                       <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >
+                       <button type="button" class="btn-ver-receita"data-id="${receita.id}" data-toggle="modal" data-target="">
+                           Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i>
+                       </button>
+                       <div class="card-header p-2">
+                         <h5 class="card-title mt-1">${receita.nome}</h5>
+                       </div>
+                   </div>
+                 </article>
+           </div>
+        `;
+      });
+     }
+     
      receitaDOM.innerHTML = result;
    }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const ui = new UI();
+const ui = new UI();
   const receitas = new Receitas();
   receitas.getReceitas()
               .then(receitas => {
                 ui.displayReceitas(receitas);
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  
 });
