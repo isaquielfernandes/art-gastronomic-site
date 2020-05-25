@@ -22,8 +22,8 @@ class Receitas{
         //let dados = await resultado.json();
         let dados = await client.getEntries({
           content_type: "receitaPost",
-          skip: 0,
-          limit: 9
+          skip: 1,
+          limit: 6
         });
         
         //let receitas = dados.receitas;
@@ -66,10 +66,13 @@ class UI{
    }
 }
 
-const ui = new UI();
-  const receitas = new Receitas();
-  ui.displayReceitas(receitas.getReceitas());
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  
+  const ui = new UI();
+  const receitasList = new Receitas();
+  receitasList.getReceitas()
+                .then( (receitas) =>{
+                    ui.displayReceitas(receitas);
+                 });
 });
