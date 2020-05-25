@@ -48,10 +48,10 @@ class UI{
                  <article>
                    <div class="card img-container">
                        <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >
-                       <button type="button" class="btn-ver-receita"data-id="${receita.id}" data-toggle="modal" data-target="">
-                           Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i>
+                       <button type="button" class="btn-ver-receita" data-id="${receita.id}" data-toggle="" data-target="">
+                           Ver Receita <i class="fa fa-cutlery"></i>
                        </button>
-                       <div class="card-header p-2">
+                       <div class="card-body p-2">
                          <h5 class="card-title mt-1">${receita.nome}</h5>
                        </div>
                    </div>
