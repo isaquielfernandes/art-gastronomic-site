@@ -16,14 +16,14 @@ client.sync({
 const receitaDOM = document.querySelector('.receitaContainer');
 
 class Receitas{
-   async getReceitas() {
+   getReceitas() {
      try{
         //let resultado = await fetch('js/receitas.json');
         //let dados = await resultado.json();
-        let dados = await client.getEntries({
+        let dados = client.getEntries({
           content_type: "receitaPost",
-          skip: 3,
-          limit: 6
+          skip: 0,
+          limit: 9
         });
         
         //let receitas = dados.receitas;
@@ -42,9 +42,9 @@ class Receitas{
 }
 
 class UI{
-  async displayReceitas(receitas){
+  displayReceitas(receitas){
      let result = "";
-      await receitas.forEach( (receita) => {
+     receitas.forEach( (receita) => {
         result +=  `
            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
                  <article>
@@ -70,8 +70,5 @@ class UI{
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const receitas = new Receitas();
-  receitas.getReceitas()
-              .then(receitas => {
-                ui.displayReceitas(receitas);
-  });
+  ui.displayReceitas(receitas.getReceitas());
 });
