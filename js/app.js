@@ -7,18 +7,8 @@ ScrollReveal().reveal('', {
 })
 
 // Apply Fluidbox to elements of interest
-//$('.card img').fluidbox();
+$('.card img').fluidbox();
 
-
-//navigation
-$(function () {
-  'use strict'
-
-  $('[data-toggle="offcanvas"]').on('click', function () {
-    $('.offcanvas-collapse').toggleClass('open')
-  })
-});
- 
 // Filter Categoria
 (function ($) {
 
