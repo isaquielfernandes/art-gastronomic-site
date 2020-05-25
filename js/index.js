@@ -65,5 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
   receitas.getReceitas()
               .then(receitas => {
                 ui.displayReceitas(receitas);
-              });
+  });
 });
