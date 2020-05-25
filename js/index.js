@@ -1,6 +1,6 @@
 //import { client } from "./contentful";
 //import "core-js/stable";
-import dados  from './receitas.js';
+//import dados  from './receitas.js';
 
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
@@ -20,8 +20,8 @@ class Receitas{
           content_type: "receitaPost"
         });
         
-        let receitas = dados.receitas;
-        //let receitas = contentful.items;
+        //let receitas = dados.receitas;
+        let receitas = contentful.items;
         receitas = receitas.map( item => {
            const { nome, categoria, descricao } = item.fields;
            const { id } = item.sys;
