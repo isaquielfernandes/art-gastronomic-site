@@ -60,15 +60,16 @@ class UI{
                  </article>
            </div>
         `;
-        receitaDOM.innerHTML = result;
+        
       });
+      receitaDOM.innerHTML = result;
    }
 }
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const ui = new UI();
+const ui = new UI();
   const receitas = new Receitas();
   ui.displayReceitas(receitas.getReceitas());
+
+document.addEventListener("DOMContentLoaded", () => {
+  
 });
