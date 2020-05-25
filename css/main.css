@@ -27,7 +27,7 @@ html, body {
 }
 
 .img-container {
-/*  position: relative; */
+  position: sticky; 
   overflow: hidden;
 }
 

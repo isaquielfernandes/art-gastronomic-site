@@ -42,11 +42,10 @@ class Receitas{
 }
 
 class UI{
-   displayReceitas(receitas){
-     const element = document.createElement('div');
+  async displayReceitas(receitas){
      let result = "";
-      receitas.forEach(receita => {
-        element.innerHTML += `
+      await receitas.forEach( (receita) => {
+        result +=  `
            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
                  <article>
                    <div class="card img-container">
@@ -61,9 +60,8 @@ class UI{
                  </article>
            </div>
         `;
+        receitaDOM.innerHTML = result;
       });
-     
-     receitaDOM.appendChild(element);
    }
 }
 
