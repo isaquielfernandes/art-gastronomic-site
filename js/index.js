@@ -43,12 +43,10 @@ class Receitas{
 
 class UI{
    displayReceitas(receitas){
+     const element = document.createElement('div');
      let result = "";
-     if(receitas === 0){
-        result += `<div><p>Caregando ....</p></div>`;
-     }else {
       receitas.forEach(receita => {
-        result += `
+        element.innerHTML += `
            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
                  <article>
                    <div class="card img-container">
@@ -64,19 +62,18 @@ class UI{
            </div>
         `;
       });
-     }
      
-     receitaDOM.innerHTML = result;
+     receitaDOM.appendChild(element);
    }
 }
 
-const ui = new UI();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ui = new UI();
   const receitas = new Receitas();
   receitas.getReceitas()
               .then(receitas => {
                 ui.displayReceitas(receitas);
   });
-
-document.addEventListener("DOMContentLoaded", () => {
-  
 });
