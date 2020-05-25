@@ -21,7 +21,10 @@ class Receitas{
         //let resultado = await fetch('js/receitas.json');
         //let dados = await resultado.json();
         let dados = await client.getEntries({
-          content_type: "receitaPost"
+          content_type: "receitaPost",
+          include: 1,
+          limit: 6,
+          skip: 0,
         });
         
         //let receitas = dados.receitas;
