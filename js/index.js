@@ -21,9 +21,7 @@ class Receitas{
         //let resultado = await fetch('js/receitas.json');
         //let dados = await resultado.json();
         let dados = await client.getEntries({
-          content_type: "receitaPost",
-          skip: 1,
-          limit: 6
+          content_type: "receitaPost"
         });
         
         //let receitas = dados.receitas;
@@ -44,12 +42,12 @@ class Receitas{
 class UI{
   displayReceitas(receitas){
      let result = "";
-     receitas.forEach( (receita) => {
+     receitas.forEach(receita => {
         result +=  `
-           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
+           <div class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
                  <article>
                    <div class="card img-container">
-                       <img src="${receita.image}" class="card-img-top img-fluid" alt="receita-img" >
+                       <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >
                        <button type="button" class="btn-ver-receita"data-id="${receita.id}" data-toggle="modal" data-target="">
                            Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i>
                        </button>
@@ -72,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const receitasList = new Receitas();
   receitasList.getReceitas()
-                .then( (receitas) =>{
+                .then(receitas =>{
                     ui.displayReceitas(receitas);
                  });
 });
