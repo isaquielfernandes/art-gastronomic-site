@@ -16,11 +16,11 @@ client.sync({
 const receitaDOM = document.querySelector('.receitaContainer');
 
 class Receitas{
-   getReceitas() {
+   async getReceitas() {
      try{
         //let resultado = await fetch('js/receitas.json');
         //let dados = await resultado.json();
-        let dados = client.getEntries({
+        let dados = await client.getEntries({
           content_type: "receitaPost",
           skip: 0,
           limit: 9
@@ -49,7 +49,7 @@ class UI{
            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
                  <article>
                    <div class="card img-container">
-                       <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >
+                       <img src="${receita.image}" class="card-img-top img-fluid" alt="receita-img" >
                        <button type="button" class="btn-ver-receita"data-id="${receita.id}" data-toggle="modal" data-target="">
                            Ver Receita <i class="fa fa-cutlery" aria-hidden="true"></i>
                        </button>
