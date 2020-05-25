@@ -48,7 +48,7 @@ class UI{
                  <article>
                    <div class="card img-container">
                        <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" loading="lazy">
-                       <button type="button" class="btn-ver-receita" data-id="${receita.id}" data-toggle="" data-target="">
+                       <button type="button" class="btn-ver-receita" data-id=${receita.id} data-toggle="" data-target="">
                            Ver Receita <i class="fa fa-cutlery"></i>
                        </button>
                        <div class="card-body p-2">
