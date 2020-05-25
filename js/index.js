@@ -40,7 +40,7 @@ class UI{
      let result = "";
      receitas.forEach(receita => {
        result += `
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" data-fluidbox>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
                 <article>
                   <div class="card img-container">
                       <img src=${receita.image} class="card-img-top img-fluid" alt="receita-img" >

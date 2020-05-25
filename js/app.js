@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.container', {
+ScrollReveal().reveal('', {
   delay: 500
 });
 
@@ -7,7 +7,7 @@ ScrollReveal().reveal('.container', {
 })
 
 // Apply Fluidbox to elements of interest
-$('.card img').fluidbox();
+//$('.card img').fluidbox();
 
 
 //navigation
