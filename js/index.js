@@ -47,8 +47,8 @@ class UI{
         result +=  `
                  <article class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}">
                    <div class="card img-container">
-                       <img src=${receita.image} class="card-img-top img-fluid receita-img" alt="receita-img" >
-                       <button type="button" class="btn-ver-receita" data-id=${receita.id} data-toggle="" data-target="">
+                       <img src="${receita.image}" class="card-img-top img-fluid receita-img" alt="receita-img" >
+                       <button type="button" class="btn-ver-receita" data-id="${receita.id}" data-toggle="" data-target="">
                            Ver Receita <i class="fa fa-cutlery"></i>
                        </button>
                        <div class="card-body p-2">
