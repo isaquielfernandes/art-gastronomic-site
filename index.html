@@ -7,15 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
@@ -106,107 +97,107 @@
         </div>
       </div>
     </div>
+    <hr class="hr p-0 mb-0">
   </div>
 
-  <!-- main section-->
-  <hr class="hr">
-
-  <div id="receitas" class="container section">
-    <div class="row">
-
-      <div class="col-sm-12 col-md-12 col-lg-3 mb-2">
-        <section id="categoria-section" class="categoria-section">
-          <div id="categorias" class="card">
-            <div id="categoria-header" class="card-header">
-              <header>
-                <h5>Categorias
-                  <button class="btn btn-outline-primary btn-sm float-right" data-toggle="collapse"
-                    data-target="#collapseCategoria" aria-expanded="true" aria-controls="collapseCategoria">
-                    <i class="fa fa-window-maximize" aria-hidden="false"></i>
-                  </button>
-                </h5>
-              </header>
+  <!-- main section post -->
+  <section class="section">
+    <div id="receitas" class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-3 mb-2">
+          <section id="categoria-section" class="categoria-section">
+            <div id="categorias" class="card">
+              <div id="categoria-header" class="card-header">
+                <header>
+                  <h5>Categorias
+                    <button class="btn btn-outline-primary btn-sm float-right" data-toggle="collapse"
+                      data-target="#collapseCategoria" aria-expanded="true" aria-controls="collapseCategoria">
+                      <i class="fa fa-window-maximize" aria-hidden="false"></i>
+                    </button>
+                  </h5>
+                </header>
+              </div>
+              <div class="collapse show categoria" id="collapseCategoria" aria-labelledby="categoria-header"
+                data-parent="#categoria-section">
+                <div class="card-body p-2">
+                  <nav class="receitaFilter clearfix list-group
+                      list-group-flush">
+                    <a href="#" data-filter="*" class="list-group-item
+                        list-group-item-action p-1 active" aria-selected="true">Todos</a>
+                    <a href="#" data-filter=".peixe" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Peixe</a>
+                    <a href="#" data-filter=".carne" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Carne</a>
+                    <a href="#" data-filter=".entradas-petiscos" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Entradas & Petiscos</a>
+                    <a href="#" data-filter=".polvo-lulas-chocos" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Polvo, Lulas & Chocos</a>
+                    <a href="#" data-filter=".sobremesas-doces" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Sobremesas & Doces</a>
+                    <a href="#" data-filter=".vegetarianos" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Vegetarianos</a>
+                    <a href="#" data-filter=".vegan" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Vegan</a>
+                    <a href="#" data-filter=".sopas" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Sopas</a>
+                    <a href="#" data-filter=".arroz" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Arroz</a>
+                    <a href="#" data-filter=".massa-pizzas" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Massa & Pizzas</a>
+                    <a href="#" data-filter=".paes" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Pães</a>
+                    <a href="#" data-filter=".mariscos" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Mariscos</button>
+                      <a href="#" data-filter=".internacional" class="list-group-item list-group-item-action p-1"
+                        aria-selected="false">Internacional</a>
+                      <a href="#" data-filter=".molhos" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Molhos</a>
+                      <a href="#" data-filter=".acompanhamentos" class="list-group-item list-group-item-action p-1"
+                        aria-selected="false">Acompanhamentos</a>
+                  </nav>
+                </div>
+              </div>
             </div>
-            <div class="collapse show categoria" id="collapseCategoria" aria-labelledby="categoria-header"
-              data-parent="#categoria-section">
+          </section>
+        </div><!-- categoria receita end -->
+  
+        <div class="col-sm-12 col-md-12 col-lg-9">
+          <section class="receita-section animate__animated animate__fadeInLeft">
+            <div class="card text-center">
+              <div class="card-header">
+                <header>
+                  <h5>Receitas</h5>
+                </header>
+              </div>
               <div class="card-body p-2">
-                <nav class="receitaFilter clearfix list-group
-                    list-group-flush">
-                  <a href="#" data-filter="*" class="list-group-item
-                      list-group-item-action p-1 active" aria-selected="true">Todos</a>
-                  <a href="#" data-filter=".peixe" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Peixe</a>
-                  <a href="#" data-filter=".carne" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Carne</a>
-                  <a href="#" data-filter=".entradas-petiscos" class="list-group-item list-group-item-action p-1"
-                    aria-selected="false">Entradas & Petiscos</a>
-                  <a href="#" data-filter=".polvo-lulas-chocos" class="list-group-item list-group-item-action p-1"
-                    aria-selected="false">Polvo, Lulas & Chocos</a>
-                  <a href="#" data-filter=".sobremesas-doces" class="list-group-item list-group-item-action p-1"
-                    aria-selected="false">Sobremesas & Doces</a>
-                  <a href="#" data-filter=".vegetarianos" class="list-group-item list-group-item-action p-1"
-                    aria-selected="false">Vegetarianos</a>
-                  <a href="#" data-filter=".vegan" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Vegan</a>
-                  <a href="#" data-filter=".sopas" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Sopas</a>
-                  <a href="#" data-filter=".arroz" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Arroz</a>
-                  <a href="#" data-filter=".massa-pizzas" class="list-group-item list-group-item-action p-1"
-                    aria-selected="false">Massa & Pizzas</a>
-                  <a href="#" data-filter=".paes" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Pães</a>
-                  <a href="#" data-filter=".mariscos" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Mariscos</button>
-                    <a href="#" data-filter=".internacional" class="list-group-item list-group-item-action p-1"
-                      aria-selected="false">Internacional</a>
-                    <a href="#" data-filter=".molhos" class="list-group-item
-                      list-group-item-action p-1" aria-selected="false">Molhos</a>
-                    <a href="#" data-filter=".acompanhamentos" class="list-group-item list-group-item-action p-1"
-                      aria-selected="false">Acompanhamentos</a>
+                <div class="card-group receitaContainer">
+  
+  
+  
+                </div>
+              </div>
+              <div class="card-footer text-muted">
+                <nav aria-label="">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Proxima</a></li>
+                  </ul>
                 </nav>
               </div>
             </div>
-          </div>
-        </section>
-      </div><!-- categoria receita end -->
-
-      <div class="col-sm-12 col-md-12 col-lg-9">
-        <section class="receita-section animate__animated animate__fadeInLeft">
-          <div class="card text-center">
-            <div class="card-header">
-              <header>
-                <h5>Receitas</h5>
-              </header>
-            </div>
-            <div class="card-body p-2">
-              <div class="card-group receitaContainer">
-
-
-
-              </div>
-            </div>
-            <div class="card-footer text-muted">
-              <nav aria-label="">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">Proxima</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- album section 
-  <section>
+  <!-- album section -->
+  <section class="section">
     <hr class="hr">
-    <div id="album" class="container section">
+    <div id="album" class="container">
       <div class="card mb-3">
         <h3 class="card-header">Album</h3>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -214,7 +205,6 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -233,13 +223,6 @@
             </div>
             <div class="carousel-item">
               <img src="img/img-fundo-03.jpg" class="d-block w-100 outher-img" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5></h5>
-                <p></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/img-fundo-04.jpg" class="d-block w-100 outher-img" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5></h5>
                 <p></p>
@@ -271,19 +254,19 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section> 
 
   <!-- section contacto -->
-  <section>
+  <section class="section">
     <hr class="hr">
-    <div id="contact" class="container section">
+    <div id="contact" class="container">
       <aside class="address p-2">
         <h2 class="">Find Us</h2>
         <div class="row justify-content-sm-center">
           <p class="col-sm-12 col-md-4 col-lg-3"><strong>Address</strong><br><i class="fas fa-map-marker-alt"></i> 123
             Main Street<br><i class="fas fa-map-marker-alt"></i> New York, NY 10001</p>
           <p class="col-sm-12 col-md-2 col-lg-3"><strong>Contact</strong><br><i class="fas fa-mobile-alt"></i>
-            935728467 <i class="fas
+              935728467 <i class="fas
               fa-phone-square-alt"></i> 945790354<br><i class="fas
               fa-envelope-square"></i> artgrastronomic@gmail.com</p>
           <p class="col-sm-12 col-md-6 col-lg-6"><strong>Hours</strong><br><i class="far fa-clock"></i> Monday–Friday:
