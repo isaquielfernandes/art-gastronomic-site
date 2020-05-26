@@ -14,7 +14,7 @@ client.sync({
 const receitaDOM = document.querySelector('.receitaContainer');
 
 class Receitas{
-   async getReceitas() {
+    async getReceitas() {
      try{
         //let resultado = await fetch('js/receitas.json');
         //let dados = await resultado.json();
@@ -44,9 +44,8 @@ class UI{
   displayReceitas(receitas){
      let result = "";
      receitas.forEach(receita => {
-        result +=  `
+        result += `
               <div class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}">
-                 <article>
                    <div class="card img-container">
                        <img src="${receita.image}" class="card-img-top img-fluid receita-img" alt="receita-img" >
                        <button type="button" class="btn-ver-receita" data-id="${receita.id}" data-toggle="" data-target="">
@@ -56,8 +55,7 @@ class UI{
                          <h5 class="card-title mt-1">${receita.nome}</h5>
                        </div>
                    </div>
-                 </article>
-               </div>
+              </div>
         `;
         
       });
@@ -65,13 +63,18 @@ class UI{
    }
 }
 
+const ui = new UI();
+const receitasList = new Receitas();
+receitasList.getReceitas().then( res => {
+  ui.displayReceitas(res);
+});
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const ui = new UI();
-  const receitasList = new Receitas();
-  receitasList.getReceitas()
-                .then(receitas =>{
-                    ui.displayReceitas(receitas);
-                 });
+  // const ui = new UI();
+  // const receitasList = new Receitas();
+  // receitasList.getReceitas()
+  //               .then(receitas =>{
+  //                   ui.displayReceitas(receitas);
+  // });
 });
