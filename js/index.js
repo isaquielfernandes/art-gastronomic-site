@@ -1,5 +1,3 @@
-//import { client } from "./contentful";
-//import "core-js/stable";
 //import dados  from './receitas.js';
 
 const client = contentful.createClient({
@@ -47,8 +45,7 @@ class UI{
      let result = "";
      receitas.forEach(receita => {
         result +=  `
-           <div class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}" >
-                 <article>
+                 <article class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}">
                    <div class="card img-container">
                        <img src=${receita.image} class="card-img-top img-fluid receita-img" alt="receita-img" loading="lazy">
                        <button type="button" class="btn-ver-receita" data-id=${receita.id} data-toggle="" data-target="">
@@ -59,7 +56,6 @@ class UI{
                        </div>
                    </div>
                  </article>
-           </div>
         `;
         
       });
