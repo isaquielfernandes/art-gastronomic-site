@@ -63,12 +63,23 @@ class UI{
    }
 }
 
-const ui = new UI();
-const receitasList = new Receitas();
-receitasList.getReceitas().then( res => {
-  ui.displayReceitas(res);
-});
 
+
+if (document.readyState === "loading") {  // Ainda carregando
+  document.addEventListener("DOMContentLoaded", () => {
+    const ui = new UI();
+    const receitasList = new Receitas();
+    receitasList.getReceitas().then( res => {
+      ui.displayReceitas(res);
+    })
+  });
+} else {
+    const ui = new UI();
+    const receitasList = new Receitas();
+    receitasList.getReceitas().then( res => {
+      ui.displayReceitas(res);
+    })
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   // const ui = new UI();
