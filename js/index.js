@@ -45,7 +45,7 @@ class UI{
      let result = "";
      receitas.forEach(receita => {
         result += `
-              <div id=${receita.categoria} class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0">
+              <div id="${receita.categoria}" class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0">
                 <article>
                    <div class="card img-container">
                        <img src="${receita.image}" class="card-img-top img-fluid receita-img" alt="receita-img" />
