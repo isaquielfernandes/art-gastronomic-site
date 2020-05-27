@@ -45,7 +45,8 @@ class UI{
      let result = "";
      receitas.forEach(receita => {
         result += `
-              <div class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0 ${receita.categoria}">
+              <div id=${receita.categoria} class="col-sm-6 col-md-4 col-lg-4 p-2 mb-0">
+                <article>
                    <div class="card img-container">
                        <img src="${receita.image}" class="card-img-top img-fluid receita-img" alt="receita-img" />
                        <button type="button" class="btn-ver-receita" data-id="${receita.id}" data-toggle="" data-target="">
@@ -54,8 +55,9 @@ class UI{
                        <div class="card-body p-2">
                          <h5 class="card-title mt-1">${receita.nome}</h5>
                        </div>
-                   </div>
-              </div>
+                  </div>
+              </article>
+            </div>
         `;
         
       });
