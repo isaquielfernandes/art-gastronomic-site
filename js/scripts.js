@@ -17,11 +17,7 @@
 			var $container = $('.receitaContainer');
 			$container.isotope({
 				filter: '*',
-				animationOptions: {
-					duration: 450,
-					easing: 'linear',
-					queue: false
-				}
+				
 			});
 		 
 			$('.receitaFilter a').click(function(){  
@@ -31,11 +27,6 @@
 				var selector = $(this).attr('data-filter');
 				$container.isotope({
 					filter: selector,
-					animationOptions: {
-						duration: 450,
-						easing: 'linear',
-						queue: false
-					}
 				 });
 				 return false;
 			}); 
