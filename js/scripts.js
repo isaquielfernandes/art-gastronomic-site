@@ -50,36 +50,22 @@ var infScroll = new InfiniteScroll( grid, {
   append: '.grid__item',
   outlayer: msnry,
   status: '.page-load-status',
-});
+});*/
 
 
 // external js: isotope.pkgd.js
 
 // init Isotope
-var iso = new Isotope( '.grid', {
+var iso = new Isotope( '.receitaContainer', {
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
 });
 
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function( itemElem ) {
-    var number = itemElem.querySelector('.number').textContent;
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function( itemElem ) {
-    var name = itemElem.querySelector('.name').textContent;
-    return name.match( /ium$/ );
-  }
-};
-
 // bind filter button click
-var filtersElem = document.querySelector('.filters-button-group');
+var filtersElem = document.querySelector('.receitaFilter');
 filtersElem.addEventListener( 'click', function( event ) {
   // only work with buttons
-  if ( !matchesSelector( event.target, 'button' ) ) {
+  if ( !matchesSelector( event.target, 'event.preventDefault()' ) ) {
     return;
   }
   var filterValue = event.target.getAttribute('data-filter');
@@ -88,8 +74,8 @@ filtersElem.addEventListener( 'click', function( event ) {
   iso.arrange({ filter: filterValue });
 });
 
-// change is-checked class on buttons
-var buttonGroups = document.querySelectorAll('.button-group');
+// change active class on a
+var buttonGroups = document.querySelectorAll('.receitaFilter a');
 for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
   var buttonGroup = buttonGroups[i];
   radioButtonGroup( buttonGroup );
@@ -98,14 +84,15 @@ for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
 function radioButtonGroup( buttonGroup ) {
   buttonGroup.addEventListener( 'click', function( event ) {
     // only work with buttons
-    if ( !matchesSelector( event.target, 'button' ) ) {
+    //event.preventDefault()
+    if ( !matchesSelector( event.target, 'a' ) ) {
       return;
     }
-    buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-    event.target.classList.add('is-checked');
+    buttonGroup.querySelector('.active').classList.remove('active');
+    event.target.classList.add('active');
   });
 }
-*/
+/*
 
 (function ($) {
 
@@ -149,4 +136,4 @@ function isExists(elem){
 		return true;
 	}
 	return false;
-}
+}*/
