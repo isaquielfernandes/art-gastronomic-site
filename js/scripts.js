@@ -1,4 +1,4 @@
-var elem = document.querySelector('.grid');
+/*var elem = document.querySelector('.grid');
 var pckry = new Packery( elem, {
   // options
   itemSelector: '.grid-item',
@@ -105,7 +105,7 @@ function radioButtonGroup( buttonGroup ) {
     event.target.classList.add('is-checked');
   });
 }
-
+*/
 
 (function ($) {
 
