@@ -106,17 +106,10 @@ function radioButtonGroup( buttonGroup ) {
   });
 }
 
-/*
+
 (function ($) {
 
     "use strict";
-
-        function isExists(elem){
-	    if ($(elem).length > 0) { 
-		return true;
-	    }
-	    return false;
-        }
 
 	$(window).on('load', function(){
 		
@@ -148,4 +141,12 @@ function radioButtonGroup( buttonGroup ) {
 	});
 	
 	
-})(jQuery);*/
+})(jQuery);
+
+
+function isExists(elem){
+	if ($(elem).length > 0) { 
+		return true;
+	}
+	return false;
+}
