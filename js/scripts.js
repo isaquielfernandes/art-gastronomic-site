@@ -65,7 +65,7 @@ var iso = new Isotope( '.receitaContainer', {
 var filtersElem = document.querySelector('.receitaFilter');
 filtersElem.addEventListener( 'click', function( event ) {
   // only work with buttons
-  if ( !matchesSelector( event.target, 'event.preventDefault()' ) ) {
+  if ( !matchesSelector( event.target, 'a' ) ) {
     return;
   }
   var filterValue = event.target.getAttribute('data-filter');
